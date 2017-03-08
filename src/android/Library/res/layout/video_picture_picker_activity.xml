@@ -1,0 +1,116 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:gravity="center|fill"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.sofienmediaselector.VideoPicturePickerActivity"
+    tools:ignore="MergeRootFrame" >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="0dp"
+    android:background="@color/Snow"
+    android:orientation="horizontal" >
+
+    <include layout="@layout/actionbar_discard_button" />
+    
+    <include layout="@layout/actionbar_done_button" />
+                <include layout="@layout/actionbar_add" />
+    
+    
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+<com.sofienmediaselector.TouchImageView
+     android:id="@+id/imageView1"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:layout_gravity="center"
+     android:baselineAlignBottom="false"
+     android:cropToPadding="false"
+     android:gravity="center"
+     android:overScrollMode="always"
+     android:scaleType="center"
+     android:src="@drawable/projector"
+     android:visibility="visible" />
+
+ <VideoView
+     android:id="@+id/videoView1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/White"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/White"
+            android:clickable="true"
+            android:columnWidth="100dp"
+            android:drawSelectorOnTop="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:numColumns="4"
+            android:stretchMode="spacingWidthUniform"
+            android:verticalSpacing="5dp" >
+        </GridView>
+
+    </LinearLayout>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:orientation="vertical"
+    android:padding="1dp"
+    android:paddingBottom="10dp"
+    android:visibility="gone" >
+
+<HorizontalScrollView
+    android:id="@+id/HorizontalScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true" >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal" >
+
+          <GridView
+              android:id="@+id/gridView2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+
+          </GridView>
+
+      </LinearLayout>
+
+</HorizontalScrollView>
+    </RelativeLayout>
+</LinearLayout>
+

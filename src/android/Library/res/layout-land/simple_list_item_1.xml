@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="1dp"
+    android:background="@color/Seashell"
+    android:orientation="vertical"
+    android:padding="1dp"
+    android:paddingBottom="10dp" >
+
+    <ImageView
+        android:id="@+id/imageS"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/White"
+        android:focusable="false"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageS"
+        android:layout_alignLeft="@+id/imageS"
+        android:layout_alignRight="@+id/imageS"
+        android:background="@drawable/main_header_selector"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/datails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:gravity="left"
+                android:text="thats me "
+                android:textColor="@color/FloralWhite"
+                android:textSize="6sp" />
+
+            <TextView
+                android:id="@+id/Folder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/Seashell"
+                android:textSize="4sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="false"
+            android:baselineAlignBottom="false"
+            android:cropToPadding="true"
+            android:paddingBottom="1dp"
+            android:paddingRight="1dp"
+            android:scaleType="fitXY"
+            android:textAlignment="gravity" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

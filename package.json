@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-video-picture-preview-picker",
+  "version": "1.1.1",
+  "description": "This plugin allows selection of  image(s)/videos(s) with a smart preview  in a cordova app",
+  "cordova": {
+    "id": "cordova-plugin-video-picture-preview-picker",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsof1111/cordova-plugin-video-picture-preview-picker.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "soufien karray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/newsof1111/cordova-plugin-video-picture-preview-picker/issues"
+  },
+  "homepage": "https://github.com/newsof1111/cordova-plugin-video-picture-preview-picker#readme"
+}
